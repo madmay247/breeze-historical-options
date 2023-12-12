@@ -6,3 +6,6 @@ __pycache__/
 
 # Ignore directory for stored data
 HistoricData/
+breeze_historical_options.egg-info/
+build/
+dist/
