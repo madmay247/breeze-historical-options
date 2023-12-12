@@ -9,7 +9,7 @@ def read_requirements():
     
 setup(
     name='breeze-historical-options',
-    version='1.1',
+    version='1.2',
     author='Mayank Rai',
     author_email='mrai748@gmail.com',
     description='A Python package for easily downloading historical options data',
