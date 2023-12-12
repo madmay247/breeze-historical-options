@@ -8,8 +8,15 @@ breeze-historical-options provides traders with second-level historic options da
 ```
 git clone https://github.com/madmay247/breeze-historical-options.git
 ```
+or using PyPi Package:
+```
+pip install breeze-historical-options
+```
 - Create Virtual Environment
-- Install required dependencies: `pip install -r requirements.txt`.
+- Install required dependencies: 
+```
+pip install -r requirements.txt
+```.
 
 ## Usage
 - Fill in `cred.yml` with your Breeze API keys and credentials.
