@@ -3,6 +3,8 @@
 ## Introduction
 breeze-historical-options provides traders with second-level historic options data using the ICICI Breeze API. Data can be used for backtesting, analysis and simulation purposes. All you need is a free ICICI direct account to access Breeze API.
 
+Referral Link - https://secure.icicidirect.com/accountopening?rfrlcode=8510403004&utm_source=referral&utm_medium=referral&utm_campaign=OAO2.0
+
 ## Installation
 - Clone or download the repository using:
 ```
@@ -20,8 +22,11 @@ pip install -r requirements.txt
 
 ## Usage
 - Fill in `cred.yml` with your Breeze API keys and credentials.
-- Adjust parameters in `example.py` as needed (e.g., expiry dates, time range, scrip, strike range).
-- Run the script: `python example.py`.
+- Adjust parameters in `example.py` as needed (e.g., expiry dates, time range, scrip, strike range, path).
+- Run the script: 
+```
+python example.py
+```
 - Data will be fetched and saved to the specified path.
 
 ## Files Explanation
