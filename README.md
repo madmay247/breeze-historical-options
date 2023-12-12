@@ -3,6 +3,8 @@
 ## Introduction
 breeze-historical-options provides historic options data(starting from seconds) using the ICICI Breeze API. Data can be used for backtesting, analysis and simulation purposes. All you need is a free ICICI direct account to access Breeze API.
 
+https://github.com/madmay247/breeze-historical-options/assets/132202725/3047a80e-1ae3-44f4-ac20-f1445375e0cf
+
 Referral Link - https://secure.icicidirect.com/accountopening?rfrlcode=8510403004&utm_source=referral&utm_medium=referral&utm_campaign=OAO2.0
 
 ## Installation
