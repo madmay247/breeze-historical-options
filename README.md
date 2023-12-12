@@ -82,3 +82,7 @@ breeze.generate_session(api_secret=cred['api_secret'],
 ```
 ## Contributing
 Contributions are welcome. Please fork the repository, make your changes, and submit a pull request.
+
+## Support
+Consider supporting via using this referral link for ICICI Direct account:
+https://secure.icicidirect.com/accountopening?rfrlcode=8510403004&utm_source=referral&utm_medium=referral&utm_campaign=OAO2.0
