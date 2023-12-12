@@ -30,7 +30,7 @@ python example.py
 - Data will be fetched and saved to the specified path.
 
 ## Files Explanation
-- `sample_cred.yml`: Template for API credentials.
+- `cred.yml`: Template for API credentials.
 - `expiries.json`: Contains a list of expiry dates for options data.
 - `example.py`: Main script to fetch data using the package.
 
