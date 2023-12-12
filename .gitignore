@@ -1,0 +1,8 @@
+# Ignore virtual environment directory
+myenv/
+
+# Ignore Python cache directory
+__pycache__/
+
+# Ignore directory for stored data
+HistoricData/
