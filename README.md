@@ -1,11 +1,15 @@
 # breeze-historical-options
 
 ## Introduction
-breeze-historical-options provides traders with second-level historic options data using the ICICI Breeze API. Data can be used for backtesting, analysis and simulation purposes.
+breeze-historical-options provides traders with second-level historic options data using the ICICI Breeze API. Data can be used for backtesting, analysis and simulation purposes. All you need is a free ICICI direct account to access Breeze API.
 
 ## Installation
-- Clone or download the repository.
-- Install Python and required dependencies: `pip install -r requirements.txt`.
+- Clone or download the repository using:
+```
+git clone https://github.com/madmay247/breeze-historical-options.git
+```
+- Create Virtual Environment
+- Install required dependencies: `pip install -r requirements.txt`.
 
 ## Usage
 - Fill in `cred.yml` with your Breeze API keys and credentials.
