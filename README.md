@@ -15,7 +15,7 @@ or using PyPi Package:
 pip install breeze-historical-options
 ```
 - Create Virtual Environment
-- Install required dependencies: 
+- Install required dependencies(if using git clone): 
 ```
 pip install -r requirements.txt
 ```
@@ -80,7 +80,7 @@ Breezy.fetch_data(
                 max_threads = 3, #Set this to 1 if you are getting api breeze_historical_v2() error
                 export_path = 'HistoricData/' #will auto-create path if it doesn't exist
                 )
-                
+
 ```
 ## Contributing
 Contributions are welcome. Please fork the repository, make your changes, and submit a pull request.
