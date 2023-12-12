@@ -1,7 +1,7 @@
 # breeze-historical-options
 
 ## Introduction
-breeze-historical-options provides traders with second-level historic options data using the ICICI Breeze API. Data can be used for backtesting, analysis and simulation purposes. All you need is a free ICICI direct account to access Breeze API.
+breeze-historical-options provides historic options data(starting from seconds) using the ICICI Breeze API. Data can be used for backtesting, analysis and simulation purposes. All you need is a free ICICI direct account to access Breeze API.
 
 Referral Link - https://secure.icicidirect.com/accountopening?rfrlcode=8510403004&utm_source=referral&utm_medium=referral&utm_campaign=OAO2.0
 
@@ -34,6 +34,28 @@ python example.py
 - `expiries.json`: Contains a list of expiry dates for options data.
 - `example.py`: Main script to fetch data using the package.
 
+## Login Code
+```python
+from datetime import datetime
+from breeze_connect import BreezeConnect
+from BreezeHistoricalOptions import autologin, Breezy
+import json, yaml, time
+
+with open('cred.yml') as f:
+    cred = yaml.load(f, Loader=yaml.FullLoader)
+    
+breeze = BreezeConnect(api_key=cred['api_key'])
+
+try:
+    session_key = autologin.get_session_key(cred=cred, force=False)
+except:
+    session_key = autologin.get_session_key(cred=cred, force=True)
+    
+    
+breeze.generate_session(api_secret=cred['api_secret'],
+                        session_token=session_key)
+```
+
 ## Fetch Data Function
 ```python
 from datetime import datetime
@@ -58,27 +80,7 @@ Breezy.fetch_data(
                 max_threads = 3, #Set this to 1 if you are getting api breeze_historical_v2() error
                 export_path = 'HistoricData/' #will auto-create path if it doesn't exist
                 )
-```
-## Login Code
-```python
-from datetime import datetime
-from breeze_connect import BreezeConnect
-from BreezeHistoricalOptions import autologin, Breezy
-import json, yaml, time
-
-with open('cred.yml') as f:
-    cred = yaml.load(f, Loader=yaml.FullLoader)
-    
-breeze = BreezeConnect(api_key=cred['api_key'])
-
-try:
-    session_key = autologin.get_session_key(cred=cred, force=False)
-except:
-    session_key = autologin.get_session_key(cred=cred, force=True)
-    
-    
-breeze.generate_session(api_secret=cred['api_secret'],
-                        session_token=session_key)
+                
 ```
 ## Contributing
 Contributions are welcome. Please fork the repository, make your changes, and submit a pull request.
