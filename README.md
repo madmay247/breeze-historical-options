@@ -16,7 +16,7 @@ pip install breeze-historical-options
 - Install required dependencies: 
 ```
 pip install -r requirements.txt
-```.
+```
 
 ## Usage
 - Fill in `cred.yml` with your Breeze API keys and credentials.
